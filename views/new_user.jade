@@ -1,0 +1,9 @@
+html
+	head
+		title Welcome
+	body
+		h1 Log In
+		p #{message}
+		form(name = "user_login", action="/users/new", method="POST")
+			input(type = 'textbox', name = "user_name")
+			input(type = 'submit')
